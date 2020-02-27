@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    background: #93b3c6;
+}
+
+span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 30px auto 40px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+/*justify-content: space-between;*/
+/*display: flex;  这两个属性让元素在容器中左右均匀分布*/
+nav {
+    position: relative; /* 相对定位*/
+    display: flex;
+    width: 78.125vw;
+    margin: 0 auto 45px;
+    justify-content: space-between;
+}
+
+
+/*按钮遮住线*/
+nav:before { /*伪类 before 是 nav里的第一个元素*/
+    position: absolute; /* 绝对定位  同      nav 和    nav > a 的 相对定位对应*/
+    top: 20px;
+    display: block; /*伪元素是行级元素 需要变成 块元素*/
+    width: 100%;
+    height: 10px;
+    content: ""; /*激活*/
+    background: #fff;
+}
+
+nav > a {
+    font-size: 20px;
+    position: relative; /* 相对定位*/
+    padding: 10px;
+    text-decoration: none; /*去掉文字下的横线*/
+    color: #255d7e; /*文字颜色*/
+    border: 2px solid #5395b4;
+    background: #fff; /*背景 白色*/
+}
+
+div {
+    position: relative; /*相对定位*/
+    overflow: hidden; /*溢出的地方隐藏*/
+    width: 78.125vw;
+    height: 75vh;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(8, 1, 3, .3);
+}
+
+div > img {
+    position: absolute; /*绝对定位 图片重叠 */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    height: 96%;
+    margin: auto;
+}
