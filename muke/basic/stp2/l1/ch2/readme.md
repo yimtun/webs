@@ -14,7 +14,9 @@ CSS 规则由两部分构成
 
 属性和属性值之间 用冒号隔开
 
-http://127.0.0.1/basic/stp2/l1/ch2/css_base.htmls
+http://127.0.0.1/basic/stp2/l1/ch2/css_base.html
+
+http://192.168.2.3/basic/stp2/l1/ch2/css_base.html
 
 
 不同的标签有不同的默认样式
