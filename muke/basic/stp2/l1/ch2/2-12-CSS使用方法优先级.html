@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css使用方法优先级</title>
+    <!--        <link rel="stylesheet" href="css2.css" type="text/css">&lt;!&ndash;color gray 灰色&ndash;&gt;-->
+    <style type="text/css">
+        @import "css1.css"; /* color green*/
+        p {
+            color: blue
+        }
+    </style>
+    <link rel="stylesheet" href="css2.css" type="text/css"><!--color gray 灰色-->
+    <link rel="stylesheet" href="css3.css" type="text/css"><!--color yellow  黄色-->
+    <style type="text/css">
+        p {
+            color: orange;
+        }
+    </style>
+
+</head>
+<body>
+
+<p style="color:red"><b>css使用方法</b></p>
+<!--<p><b>css使用方法</b></p>-->
+
+<xmp>
+    #######################
+
+    行内样式优先级最高
+
+    import 导入式 和link 链入式 都属于 外部样式表
+
+    优先级
+    行内样式>内部样式>外部样式
+
+    说明
+
+    1 外部链入样式 和内部样式表之间的优先级取决于所处位置的先后
+    2 最后定义的优先级最高 （就近原则）
+
+    #####################################
+    对于同一个元素，同时使用这些方法来设置css样式
+    哪一种方法才能真正起到作用呢
+
+    行内样式 优先于内部样式
+    行内样式优先于 导入式
+
+
+    内部样式优先于导入式
+
+    内部样式 外部链入样式 看哪个代码块离得近 优先级取决于前后位置
+    谁的位置更接近设置的元素谁的优先级就更高
+
+
+    导入式 必须放在style 标签的第一行 后面才是其他的样式 实际上他是存在内部样式表中 内部样式和外部链入样式根据前后位置决定优先级
+    就近原则
+</xmp>
+</body>
+</html>
