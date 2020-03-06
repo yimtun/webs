@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS集成和层叠</title>
+    <style type="text/css">
+
+        h1 {
+            color: red;
+        }
+
+        h1 {
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>CSS继承和层叠</h1>
+<xmp>
+    CSS层叠 有冲突覆盖
+    h1 {
+    color: red;
+    }
+
+    h1 {
+    color: blue;
+    }
+    就近原则显示蓝色
+
+    ##################
+    没有冲突 叠加
+    h1 {
+    color: red;
+    }
+
+    h1 {
+    font-size: 12px;
+    }
+###################
+    可以定义多个样式
+    不冲突时 多个样式可以层叠为一个
+    冲突时 按不同样式规则优先级来应用样式
+
+</xmp>
+</body>
+</html>

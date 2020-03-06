@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS集成和层叠</title>
+    <style type="text/css">
+        /*p{color: red}*/
+
+        /*div {*/
+        /*    font-size: 12px;*/
+        /*    border: 1px solid red;*/
+        /*}*/
+
+        body {
+            font-size: 12px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+    <p>CSS<span>继承</span></p>
+    <div>CSS层叠</div>
+</div>
+
+<p>CSS继承和层叠</p>
+<table border="1">
+    <tr>
+        <td>CSS继承</td>
+        <td>CSS层叠</td>
+    </tr>
+</table>
+<h1>CSS继承和层叠</h1>
+<xmp>
+    CSS继承
+    从父原素继承部分CSS属性
+    不是所有属性都可以继承 字体大小 颜色等CSS属性是可以继承的
+    border 等属性是不可以继承的
+
+
+    IE6以下的版本 表格不会集成border 元素的属性 IEtester 为了避免兼容问题的发生 以群组的方式进行设置样式
+    body, table, tr, td {
+    font-size: 12px;
+    }
+    #####################
+    h1标签有自己的默认样式
+    2em  2*12 = 24px   针对上一级字体大小的2em
+
+    当元素上一级定义的样式与元素本身定义的冲突的时候 将会忽略继承得来的样式
+    #############################
+
+</xmp>
+</body>
+</html>

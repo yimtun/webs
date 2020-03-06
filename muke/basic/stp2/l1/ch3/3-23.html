@@ -8,19 +8,43 @@
             height: 30px;
         }
 
+        a {
+            text-decoration: none;
+        }
 
+        a:link {
+            color: orange;
+        }
+
+        .suit a:visited {
+            color: green
+        }
+
+        .wc a:visited {
+            color: blue;
+        }
+
+        .skin a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: green;
+            font-size: 20px;
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
 
 <h2>商品列表</h2>
-<p class="suit">
+<p class="suit aColor">
     <a href="#">衣服鞋帽</a>
 </p>
-<p class="wc">
+<p class="wc aColor">
     <a href="#">厕所清洁</a>
 </p>
-<p class="skin">
+<p class="skin aColor">
     <a href="#">化妆用品</a>
 </p>
 
@@ -57,6 +81,7 @@
 
     第四步：按照要求给3个链接被访问后字体的颜色
 
+    为啥只访问了一个就都算作被访问了？？？
 
 </xmp>
 </body>
