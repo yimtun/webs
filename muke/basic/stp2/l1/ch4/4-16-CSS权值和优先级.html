@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            color: black;
+        }
+        /* 权值是0 */
+
+        p b {
+            color: yellow !important;
+        }
+
+        /* 两个标签选择器 权值 2  权值不同 应用权值高的*/
+        b {
+            color: purple;
+        }
+
+        /* 一个标签选择器 权值 1*/
+        .classblue {
+            color: blue;
+        }
+
+        /*  权值10*/
+
+        #test1 p b {
+            color: orange;
+        }
+        /* 100+1+1=102*/
+
+        div p .classblue {
+            color: red;
+        }
+        /*1+1+10=12*/
+
+        div #test2 b{
+            color: gray;
+        }
+        /*1 + 100 + 1=102*/
+    </style>
+</head>
+<body>
+
+<p>派生选择器的优先级</p>
+<div id="test1">
+    <h1>CSS样式优先级</h1>
+    <p id="test2">所谓<b class="classblue" style="color: pink">CSS优先级</b>,指CSS样式在浏览器中被解析的先后顺序</p>
+    <div><b>权值相同</b>,就近原则； <b>权值不同</b>，哪个权值高，使用哪个。</div>
+</div>
+
+<xmp>
+
+    ######### 派生选择器的优先级 ########
+
+
+
+    ####  !important 来调整优先级 #######
+    可以调整样式规则的优先级
+    添加在样式规则之后  中间用空格隔开  甚至高于行内样式的优先级   优先级最高
+
+    p b {
+    color: yellow !important;
+    }
+
+#####CSS优先级总结#####
+    !important 声明最高
+
+
+    CSS使用方法优先级
+    行内样式》 内部样式》 外部样式
+    注：link链入外部样式style 内部样式优先级 取决于先后顺序
+
+    样式表中优先级
+    id选择器 》 class选择器 》 标签选择器 》 通配符选择器
+    权值相同就近原则 权值不同 使用权值高的
+</xmp>
+</body>
+</html>
