@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #fontSize {
+            font-size: 20px;
+        }
+
+        /* 子元素没有设置就会 继承父元素的 font-size*/
+        .percent {
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="fontSize">
+    <p>文字大小<span class="em">相对值em</span></p>
+    <p class="percent">文字大小<span>相对值%</span></p>
+    <p class="percent">文字大小<span class="percent">相对值%</span></p>
+</div>
+
+<xmp>
+    字体大小是可以继承的
+
+    span 标签继承 父元素的计算值 p 标签计算之后 20px*150%=30px span 继承的也是30px
+
+    ###### 继承父元素的计算值
+
+    <p class="percent">文字大小<span class="percent">相对值%</span></p>
+    span 30px * 150% =
+
+</xmp>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .in {
+            font-size: 0.5in;
+        }
+
+        .cm {
+            font-size: 0.5cm;
+        }
+
+        .mm {
+            font-size: 5mm;
+        }
+
+        .pt {
+            font-size: 15pt;
+        }
+
+        .pc {
+            font-size: 2pc;
+        }
+
+
+        .xxSmall {
+            font-size: xx-small;
+        }
+
+        .xSmall {
+            font-size: x-small;
+        }
+
+        .small {
+            font-size: small;
+        }
+
+        .medium {
+            font-size: medium;
+        }
+
+        .large {
+            font-size: large;
+        }
+
+        .xLarge {
+            font-size: x-large;
+        }
+
+        .xxLarge {
+            font-size: xx-large;
+        }
+
+        p{
+            font-size: 50px;
+        }
+
+        /*larger smaller*/
+        .larger{font-size:larger;}
+        .smaller{font-size:smaller;}
+        /*em 示例*/
+
+        .em{font-size:2em;}
+        .percent{font-size: 150%;}
+    </style>
+</head>
+<body>
+
+
+<!--绝对单位-->
+
+<p>默认字体大小</p>
+
+<p class="in">文字大小是0.5in</p>
+<p class="cm">文字大小是0.5cm</p>
+<p class="mm">文字大小是5mm</p>
+<p class="pt">文字大小是15pt</p>
+<p class="pc">文字大小是2pc</p>
+
+<p class="xxSmall">文字大小是xx-small</p>
+<p class="xSmall">文字大小是x-small</p>
+<p class="small">文字大小是small</p>
+<p class="medium">文字大小是medium</p>
+<p class="large">文字大小是large</p>
+<p class="xLarge">文字大小是x-large</p>
+<p class="xxLarge">文字大小是xx-large</p>
+
+<p>####### 开始相对单位的学习</p>
+<p>文字大小px 受显示器分辨率影响</p>
+
+
+<p>文字大小<span class="larger">相对父元素的文字大小变大</span></p>
+<p>文字大小<span class="smaller">相对父元素的文字大小变小</span></p>
+
+
+<div id="fontSize">
+    <p>文字大小<span class="em">相对值em</span></p>
+    <p class="percent">文字大小<span class="percent">相对值%</span></p>
+</div>
+
+<xmp>
+    #####################################
+
+
+    font-size 文字大小
+    定义元素内文字大小
+
+    语法
+    font-size 绝对单位 或者 相对单位
+
+    ######绝对单位 在任何分辨率的显示下 显示出来的都是绝对的大小 不会发生改变
+
+    ### 绝对单位 绝对大小 不能随浏览器分辨率或者父元素大小的改变而改变 可以通过调整 操作系统显示分辨率来进行验证
+    属性值 说明
+    in 英寸 2.54厘米
+    cm 厘米 1cm=0.394英寸
+    mm 毫米 1毫米=0.1厘米
+    pt 磅 印刷的点数 72磅=1英寸
+    pc 1pc=12pt
+
+    ######### 当不设置字体大小的时候 默认为浏览器的默认值
+    ######### 浏览器默认字体大小 一般为 16px
+
+    ########## 其他绝对单位 不同浏览器显示效果不一样 不推荐使用
+    属性值 CSS2缩放系数1.2
+    xxSmall 9px
+    xSmall 11px
+    small 13px
+    medium 16px
+    large 19px
+    xLarge 23px
+    xxLarge 28px
+
+    浏览器默认字体大小一般是 medium 16px
+
+
+    ############ 字体大小的相对单位
+    px 像素 比如说浏览器 分辨率 1280 * 720 这个单位指的就是像素的单位值
+    em
+    %
+
+    ###### px  受显示器分辨率的影响  在手机端设置字体大小的时候一般
+
+
+    ####### font-size 还有两个相对值 larger smaller
+    #########  larger 相对父元素的文字大小变大   smaller 相对父元素的文字大小变小
+
+
+    ########## em 父元素是 50px  子元素 2em  就是100px
+
+    ######  % 百分比  相对父元素字体到小的百分比  p 标签的夫元素是div  没有设置字体大小 就按浏览器默认的字体大小 16px计算
+    16px*150% = 24px
+</xmp>
+
+</body>
+</html>
