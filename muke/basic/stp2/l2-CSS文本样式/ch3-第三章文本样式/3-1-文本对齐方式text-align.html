@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .text1 {
+            text-align: left;
+        }
+
+        .text2 {
+            text-align: center;
+        }
+
+        .text3 {
+            text-align: right;
+        }
+
+        .text4 {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+
+<P class="text1">文本左对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language)。</P>
+
+<P class="text2">文本居中对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language)。</P>
+
+<P class="text3">文本右对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language)。</P>
+
+<P class="text4">文本两端对齐：HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language),
+    标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+    HTML 不是一种编程语言，而是一种标记语言 (markup language)。</P>
+
+<xmp>
+    text-align 属性 设置元素内文本的水平对齐方式
+
+    text-align
+    left
+    right
+    center
+    justify 两端对齐 可以让大段文本 看起来更加整齐
+
+    html 中关于文本水平对齐的设置 使用 align
+    <p align="left">
+
+
+        ######## CSS 行内样式的使用
+    <p style="text-align: left"></p>
+
+
+    ######## 注意 text-align 属性只对块级元素的设置有效 p 标签是一个块级元素 span 标签就不是块级元素 img 也不是块级元素
+    可以在相应的内容外嵌套一个块级元素 div 然后设置 div 的 text-align
+    如下示例 div{text-align:center;}
+
+    ###### text-align属性是可以继承的 当对相应的元素设置了对齐方式 后代元素将继承 该对齐方式
+    示例body{text-align:right;}
+</xmp>
+</body>
+</html>

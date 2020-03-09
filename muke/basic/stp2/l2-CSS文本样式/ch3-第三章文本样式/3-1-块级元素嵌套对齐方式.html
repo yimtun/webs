@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>文本属性</title>
+    <style type="text/css">
+
+        .textAlign{text-align:center;}
+        .textAlign p{width:50%;margin:0 auto;}
+    </style>
+</head>
+<body>
+<div class="textAlign">
+    <P>指定宽度HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+        HTML 不是一种编程语言，而是一种标记语言 (markup language),
+        标记语言是一套标记标签 (markup tag)。HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+        HTML 不是一种编程语言，而是一种标记语言 (markup language)。</P>
+</div>
+
+
+<xmp>
+    文字针对p 标签居中   火狐 谷峰  IE6 不是
+    .textAlign{text-align:center;}
+
+    IE6下处理文字针对p 标签居中外  整个p 标签 也居中
+
+    在不同浏览器出现了不同居中的展示效果 这是因为text-align 是设置文本的水平对齐方式 继承的是对元素相应内容设定
+    对齐方式 但是在IE  中 对齐会应用在此元素内所有的后代元素上 元素本身也会居中显示
+
+    如果想除了文字居中 还想让元素在不同浏览器也居中显示  需要如下书写
+    p  标签 添加一个样式 设置下 margin
+    .textAlign p{width:50%;margin:0 auto;}      0 代表上下边距    auto 代表左右边距  此处是自动
+
+
+
+
+
+</xmp>
+</body>
+
+
+</html>
