@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        p {
+            background-color: #ececec;
+            height: 80px;
+            font-size: 20px;
+        }
+
+        span {
+            color: red;
+            font-size: 14px;
+        }
+
+        .sub {
+            vertical-align: sub;
+        }
+
+        .super {
+            vertical-align: super;
+        }
+
+
+        /*其他对齐值*/
+        img {
+            width: 130px;
+            height: 40px;
+        }
+
+        .baseLine {
+            vertical-align: baseline;
+        }
+
+        .top {
+            vertical-align: top;
+        }
+
+        .textTop {
+            vertical-align: text-top;
+        }
+
+        .middle {
+            vertical-align: middle;
+        }
+
+        .textBottom {
+            vertical-align: text-bottom;
+        }
+
+        .bottom {
+            vertical-align: bottom;
+        }
+        /*垂直对齐用于单元格*/
+        td{height:80px; width:100px;}
+
+    </style>
+</head>
+<body>
+
+<b>----sub和super值----</b>
+<p>CSS层叠样式表<span class="sub">sub</span></p>
+<p class="sub">CSS层叠样式表<span>sub</span></p>
+<p>CSS层叠样式表<span class="super">super</span></p>
+
+
+<b>----baseline、top、text-top、middle、bottom、text-bottom值----</b>
+<p>
+    CSS层叠样式表
+    <span>（Cascading Style Sheets）</span>
+    <img src="img/logo.png"/>
+</p>
+<p>
+    CSS层叠样式表
+    <span class="baseLine">基线baseline</span>
+    <img src="img/logo.png" class="baseLine"/>
+</p>
+<p>
+    CSS层叠样式表
+    <span class="top">顶端对齐top</span>
+    <img src="img/logo.png"/>
+</p>
+<p>
+    CSS层叠样式表
+    <span class="textTop">文本的顶端对齐textTop</span>
+    <img src="img/logo.png"/>
+</p>
+<p>
+    CSS层叠样式表
+    <span class="middle">中部对齐middle</span>
+    <img src="img/logo.png" class="middle"/>
+</p>
+
+<p>
+    CSS层叠样式表
+    <span class="textBottom">文字底端对齐textBottom</span>
+    <img src="img/logo.png"/>
+</p>
+<p>
+    CSS层叠样式表
+    <span class="bottom">底端对齐bottom</span>
+    <img src="img/logo.png" class="bottom"/>
+</p>
+
+
+
+<b>----长度和百分比的值----</b>
+<p>
+    CSS层叠样式表
+    <span style="vertical-align:-15px;">长度值</span>
+    <img src="img/logo.png"/>
+</p>
+
+<p style="line-height: 1.5em;">
+    CSS层叠样式表
+    <span style="vertical-align:-100%;">百分比值</span>
+    <img src="img/logo.png"/>
+</p>
+
+
+
+<b>----应用于单元格元素----</b>
+<table border="1px" class="one" cellspacing="0" >
+    <tr>
+        <td class="top"><span>top</span></td>
+        <td class="middle"><span>middle</span></td>
+        <td class="bottom"><span>bottom</span></td>
+    </tr>
+</table>
+
+
+
+<xmp>
+    vertical-align 属性
+    设置元素内容的垂直方式
+    语法
+    vertical-align:
+    baseline
+    sub 下标
+    super 上标
+    top
+    text-top
+    middle
+    bottom
+    text-bottom
+
+    长度
+    百分比
+
+    ############ 垂直对齐属性对行内元素才生效 span 对于块级元素是p不生效的
+
+    ###### 英文中的 baseline 基线
+
+
+    ##### top bottom 对顶端和底部进行对齐
+
+
+    #### text-top 文字顶端对齐
+
+    ##### middle 中线对齐
+
+    ######## baseline 基线对齐
+
+    #### text-bottom 和文本底端对齐
+    ##### 垂直对齐的默认值 是基线对齐 baseline
+
+    ####  vertical-align   也可以用于图片   img  也是一个行内元素
+
+
+
+
+    ##############长度和百分比设置 垂直对齐方式
+    sub  super 移动的距离是浏览器决定的  长度和百分比可以精确控制文字上下移动的幅度
+    直接使用行内样式
+
+    正数是上移   负数是下移
+    <b>----长度和百分比的值----</b>
+    <p>
+        CSS层叠样式表
+        <span style="vertical-align:-15px;">长度值</span>
+        <img src="img/logo.png"/>
+    </p>
+
+    <p style="line-height: 1.5em;">
+        CSS层叠样式表
+        <span style="vertical-align:-100%;">百分比值</span>
+        <img src="img/logo.png"/>
+    </p>
+
+
+    #########  如何 p 标签设置了行高  line-height 1.5em 那么 span在垂直居中的百分比上面
+    -100%  相当于下移了 1.5em
+
+###############  垂直对齐的属性 还可以应用在单元格元素
+
+
+</xmp>
+</body>
+</html>

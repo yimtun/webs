@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style type="text/css">
+        /*.one{text-decoration: underline}*/
+        .one{text-decoration: underline overline none;}
+        .two{color:red;text-decoration: overline;}
+        .three{text-decoration:line-through;}
+        .four{text-decoration: blink;}
+        .five{text-decoration: none;}
+        a{text-decoration: none;}
+        span{color:blue;text-decoration: underline;}
+    </style>
+</head>
+<body>
+<a href="#">CSS层叠样式表</a>
+<p class="one">CSS层叠样式表（Cascading Style Sheets）</p>
+<p class="two">CSS层叠样式表<span>（Cascading Style Sheets）</span></p>
+<p class="three">CSS层叠样式表（Cascading Style Sheets）</p>
+<p class="four">CSS层叠样式表（Cascading Style Sheets）</p>
+<p class="five">CSS层叠样式表（Cascading Style Sheets）</p>
+
+
+<xmp>
+
+    text-decoration 设置元素内文本的装饰
+    上划线 下划线   贯穿线
+    闪烁效果  blink   兼容问题
+
+    同一个内容可以设置多个   text-decoration 属性值  用空格隔开  如果最后一个属性值是none   会将前面的样式属性值清空
+
+
+    ####### 可以用于块级元素和行内元素   span 标签 测试
+
+    ###### text-decoration  属性不能继承
+
+    #######  下划线的颜色 和字体颜色是一样的
+
+</xmp>
+</body>
+</html>

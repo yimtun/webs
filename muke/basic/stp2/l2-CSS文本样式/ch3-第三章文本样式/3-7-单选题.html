@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            line-height: 1.5em;
+        }
+
+        p {
+            font-size: 32px
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>sdfsdf</p>
+</div>
+
+<xmp>
+    下面代码中，p标签的行高是多少？（选择一项）
+
+    计算出来div 的计算值
+
+    C  浏览器默认字体大小的1.5倍
+
+
+    本题考察的是CSS中设置行高的属性line-height。正确选项为C；
+
+    Line-height属性设置行间的距离，也就是行高。它的值可以用像素，em也可以用百分比。
+
+    本题中，行高设置在p标签父元素div上，行高属性可以继承；但是继承的属性值是计算过后的值，比如div的字体大小默认是16px，16px的1.5倍就是24px，所以p标签继承的行高属性值是24px，而不是用p标签的行高32*1.5。
+
+</xmp>
+</body>
+</html>

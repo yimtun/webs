@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        p {
+            background-color: #ececec;
+            height: 100px;
+            width: 200px;
+        }
+
+        span {
+            background-color: #acacac;
+            width: 200px;
+            height: 100px;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+    <p>盒子模型高度height宽度width</p>
+    <span>盒子模型高度height宽度width</span>
+
+
+    <img src="img/html.jpg" width="200px"/><img src="img/css.jpg" height="100px"/>
+
+
+</div>
+
+
+<xmp>
+    ######## 哪些html 元素可以设置 宽和高属性
+    块级元素
+    p div h1-h6 ul li ol dl dt dd 等
+
+    替换元素
+    img input textarea 等
+
+
+    img 通过 width 属性 height 属性设置高宽 如果同时设置了css 样式 最终效果是CSS 样式起作用
+    <img src="img/html.jpg" width="200px"/><img src="img/css.jpg" height="100px"/>
+
+    ####### 总结
+
+    高度 宽度指的是 内容的 高和宽
+    只对块级元素和 替换元素有效
+    最大最小 max-height/width min-heght/width 有兼容问题 IE 不支持
+
+
+</xmp>
+
+</body>
+</html>

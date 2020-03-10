@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*单行的水平垂直居中*/
+        /*.warp {*/
+        /*    height: 400px;*/
+        /*    width: 100%;*/
+        /*    border: 1px blue solid;*/
+        /*    line-height: 400px;*/
+        /*    text-align: center;*/
+        /*}*/
+
+        /*多行的水平垂直居中*/
+
+        /*外层div  设置高度 宽带 边框 */
+        .warp {
+            height: 400px;
+            width: 100%;
+            border: 1px blue solid;
+            display: table;
+        }
+
+        /*vertical-align 属性只对行内元素  单元格 行内元素内不能放块级元素 所有不能把 div 换成 span 有效*/
+        /*.content {*/
+        /*    vertical-align: middle;*/
+        /*}*/
+
+
+        .content {
+            vertical-align: middle;
+            display: table-cell;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--单行的水平垂直居中-->
+<!--<div class="warp">-->
+<!--    <p>Welcome to Website</p>-->
+<!--</div>-->
+
+
+<!--多行的水平垂直居中  使用单行的方法会不能实现 -->
+
+<!--<div class="warp">-->
+<!--    <p>Welcome to Website<br>CSS层叠样式，用于网页样式设置，使网页更美观。</p>-->
+<!--</div>-->
+
+
+<!--重新准备的代码-->
+
+<div class="warp">
+    <div class="content">
+        <img src="img\logo.jpg"/>
+        <h1>Welcome to Website</h1>
+        <h2>CSS层叠样式，用于网页样式设置，使网页更美观。</h2>
+    </div>
+</div>
+
+<xmp>
+    ### 垂直居中分为两种情况
+    1 单行文字在一定区域内垂直居中
+    2 多行文字在一定范围内垂直居中
+
+    ######## 单行文字垂直居中 将 line-height 值和元素的高度设置成一样
+    水平对齐 使用 text-align:center
+
+
+    ##### 多行的水平垂直居中 实现 context div 在 外层 warp div 范围内 水平垂直居中
+
+    ####### 使用 display:table-cell 将 块级元素转换为单元格元素 需要在设置此值的父元素处设置 display:table
+
+    水平居中的方式依然是 text-align
+</xmp>
+</body>
+</html>
