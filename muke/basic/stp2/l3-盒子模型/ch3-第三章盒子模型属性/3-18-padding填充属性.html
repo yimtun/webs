@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*.one {*/
+        /*    width: 300px;*/
+        /*    height: 300px;*/
+        /*    background-color: #acacac;*/
+        /*    padding-top: 20px;*/
+        /*    padding-left: 30px;*/
+        /*    padding-bottom: 50px;*/
+        /*    padding-right: 40px;*/
+        /*}*/
+
+
+
+        .one {
+            width: 300px;
+            height: 300px;
+            background-color: #acacac;
+           padding: 20px;
+        }
+
+        /*.content{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: #ececec;*/
+        /*    padding-top: 10px;*/
+        /*    padding-left: 5px;*/
+        /*}*/
+
+        .content {
+            width: 100%;
+            height: 100%;
+            background-color: #ececec;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div class="one">padding属性</div>-->
+
+<div class="one">
+    <div class="content">padding属性</div>
+</div>
+<xmp>
+    padding 属性
+    盒子内容到盒子边框 之间的距离
+
+    -------------
+
+    xxxxxxxxxxxx border边框
+
+    padding
+    xxxxxxxxx content 内容
+
+    ##### padding 可以为不同方向单独设置
+
+    ###### 设置元素的内容与边框之间的距离（内边距或填充） 分四个方向
+    ###### 分四个方向 上 右 下 左
+    padding-top： 长度值|百分比
+    padding-right： 长度值|百分比
+    padding-bottom： 长度值|百分比
+    padding-left： 长度值|百分比
+
+    ###### 值不能为负数
+
+
+    ######### 当前盒子的高度 320px 300+20px=320px
+
+    .one{
+    width: 300px;
+    height: 300px;
+    background-color: #acacac;
+    padding-top: 20px;
+    }
+
+    ###### 当前盒子宽度 330
+
+    .one{
+    width: 300px;
+    height: 300px;
+    background-color: #acacac;
+    padding-top: 20px;
+    padding-left: 30px;
+    }
+
+    ############### 在网页中 整个盒子
+    盒子在网页中占据的空间 不单单和width height 宽度 高度属性有关
+    还与padding 有关
+
+
+    ######### 内边距属性缩写
+    padding: 值1； // 4个方向都为值1
+    padding: 值1 值2 // 上下=值1 ， 左右=值2
+    padding: 值1 值2 值3 //上=值1 左右=值2 下=值3
+    padding: 值1 值2 值3 值4 //上=值1， 右=值2 ，下=值3 左=值4
+
+
+    ########## 由于内部的div 不够大 所有显示效果与预期不符 将 内层div 宽高 改为100%
+
+
+    .content{
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    padding-top: 10px;
+    padding-left: 5px;
+    }
+
+    ###### 为了效果不受内层padding属性的影响 把内层padding属性删除掉
+
+    .content{
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    }
+    ########  f12 调试工具  鼠标选中 one div
+    margin 横线  代表没设置
+    border 横线   代表没设置
+
+    盒子大小是300*300px
+
+</xmp>
+
+</body>
+</html>

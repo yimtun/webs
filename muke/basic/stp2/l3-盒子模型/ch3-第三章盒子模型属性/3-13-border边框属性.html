@@ -3,24 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        p {
+            width: 150px;
+            height: 100px;
+            background-color: #ececec;
+            line-height: 100px;
+        }
+
+        .one {
+            border-top-width: 10px;
+            border-top-color: #0099ee;
+            border-top-style: solid;
+        }
+
+        .two {
+            border-top-width: 10px;
+            border-top-color: red;
+            border-top-style: dotted;
+            border-right-width: 10px;
+            border-right-color: #0099ee;
+            border-right-style: solid;
+            border-bottom-width: 5px;
+            border-bottom-color: green;
+            border-bottom-style: double;
+
+            border-left-width: 8px;
+            border-left-color: blue;
+            border-left-style: double;
+        }
+
+        .jx1 {
+            border: 10px #0099ee solid;
+        }
+
+        .jx2{
+            border-top: 5px red solid;
+            border-left: 10px blue dotted;
+            border-right: 10px blue dotted;
+            border-bottom: 5px red solid;
+        }
+    </style>
 </head>
 <body>
 
-
+<!--border属性-->
+<!--<p>边框属性border</p>-->
+<p class="one">边框属性border</p>·
+<p class="two">边框属性border</p>
+<p class="jx1">简写1</p>
+<p class="jx2">简写2</p>
 <xmp>
     边框属性
     边框宽度 border-width
     边框颜色 border-color
     边框样式 border-style
 
-    #######  边框宽度
+    ####### 边框宽度设置
     border-width:thin|medium|thick|长度值
 
     thin 窄边框
-    medium  中等边框
+    medium 中等边框
     thick 厚边框
+    长度值 px em
+    ###### 设置元素边框颜色
+    border-corlor: 颜色| transparent
+    transparent 透明
 
-    
+    ###### 边框的颜色 宽度 样式 都得设置 演示 border-style
+    border-style 不设置默认值是 none 没有样式框
+    none 默认
+    solid 定义实线
+    double 定义双线
+    dotted 定义点状边框 在大多书浏览器中呈现为实线
+    dashed   定义虚线
+    #### border-corlor border-style border-width 设置后 边框的四个方向样式是一样的
+
+
+    ########## 示例
+
+
+    p {
+    width: 150px;
+    height: 100px;
+    background-color: #ececec;
+    line-height: 100px;
+    border-width: 10px;
+    border-color: #0099ee;
+    border-style: dotted;
+    }
+
+
+    ########## 边框属性 四个不同方向来表示 上下左右
+    表示
+    border-[left|right|top|bottom]-width
+    border-[left|right|top|bottom]-corlor
+    border-[left|right|top|bottom]-style
+
+    ###### 简写的方式设置边框样式
+    1 如果边框的样式是一样的 使用 border: 宽度| 样式 |颜色
+    空格隔开
+    border: 10px #0099ee solid;
+
+
+    2 设置不同方向的简写写法
+    border-top: 宽度| 样式 |颜色
+    border-left: 宽度| 样式 |颜色
+    border-right: 宽度| 样式 |颜色
+    border-bottom: 宽度| 样式 |颜色
 </xmp>
 </body>
 </html>
